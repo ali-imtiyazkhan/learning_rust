@@ -22,10 +22,10 @@ impl fmt::Display for Point {
     }
 }
 
-// let (s1, s2) = (&t.0, &t.1);  borrowing
+// let (s1, s2) = (&t.0, &t.1);  // borrowing
 // 's1' and 's2' are just LOOKING at the strings in 't'. 't' is still valid.
 
-// let (s1, s2) = t.clone(); 
+// let (s1, s2) = t.clone();     // cloning
 // 's1' and 's2' are NEW strings. 't' is still valid.
 
 
