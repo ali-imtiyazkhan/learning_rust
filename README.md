@@ -22,14 +22,14 @@ A comprehensive collection of Rust learning materials, following a structured cu
 16. **Methods & Associated Functions** - Implementation blocks and `self`.
 17. **Generics** - Abstracting over types.
 18. **Traits** - Defining shared behavior.
+19. **Trait Objects** - Dynamic dispatch with `dyn Trait`.
+20. **Associated Types** - Placeholders in traits for concrete types.
+21. **String (Collection)** - Growing, shrinking, and manipulating UTF-8 strings.
+22. **Vectors** - Resizable arrays for storing multiple values.
+23. **HashMaps** - Storing key-value pairs.
 
 ## Upcoming Topics
 
-- Trait Objects
-- Associated Types
-- String (Collection)
-- Vectors
-- HashMaps
 - Type Coercion
 - From & Into
 - panic!
