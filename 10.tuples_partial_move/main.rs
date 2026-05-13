@@ -17,7 +17,7 @@ fn main() {
     
     // By using a reference (&), we borrow the value instead of taking ownership
     let _s2: &String = &t2.0;
-    
+     
     // Now t2 remains fully valid!
     println!("Whole tuple t2 is still valid: {:?}", t2);
 }
