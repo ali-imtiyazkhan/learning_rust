@@ -46,6 +46,9 @@ fn main() {
 
     // --- Unit-Like Structs Usage ---
     let _subject = AlwaysEqual;
+
+    // --- Area Example ---
+    area_example();
 }
 
 fn build_user(email: String, username: String) -> User {
@@ -55,4 +58,33 @@ fn build_user(email: String, username: String) -> User {
         active: true,
         sign_in_count: 1,
     }
+}
+
+// --- Example: Calculating the Area of a Rectangle ---
+
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+fn area_example() {
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+
+    println!(
+        "The area of the rectangle is {} square pixels.",
+        area(&rect1)
+    );
+
+    // Using #[derive(Debug)] to print the struct
+    println!("rect1 is {:?}", rect1);
+    // Pretty print
+    println!("rect1 is {:#?}", rect1);
+}
+
+fn area(rectangle: &Rectangle) -> u32 {
+    rectangle.width * rectangle.height
 }
