@@ -22,6 +22,13 @@ impl fmt::Display for Point {
     }
 }
 
+// let (s1, s2) = (&t.0, &t.1);  borrowing
+// 's1' and 's2' are just LOOKING at the strings in 't'. 't' is still valid.
+
+// let (s1, s2) = t.clone(); 
+// 's1' and 's2' are NEW strings. 't' is still valid.
+
+
 fn main() {
     // 1. Printing with Debug
     // {:?} is for normal debug, {:#?} is for "pretty" debug (multi-line)
