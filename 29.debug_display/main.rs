@@ -9,7 +9,7 @@ struct Structure(i32);
 struct Deep(Structure);
 
 // --- The Display Trait ---
-// Display must be implemented manually for custom types
+// Display must be implemented manually for custom type
 struct Point {
     x: f64,
     y: f64,
