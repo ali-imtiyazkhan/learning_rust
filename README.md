@@ -32,11 +32,13 @@ A comprehensive collection of Rust learning materials, following a structured cu
 26. **panic!** - Handling unrecoverable errors.
 27. **Result & Error Handling** - Managing recoverable errors with `Result<T, E>` and the `?` operator.
 28. **Cargo, Crates & Modules** - Organizing code into packages, crates, and modules for scope and privacy.
+29. **Debug & Display** - Implementing traits for custom formatting.
+30. **Lifetimes** - Ensuring references remain valid.
+31. **Arrays** - Fixed-size collections on the stack.
+32. **Array Indexing & Iteration** - Accessing and looping through array elements.
 
 ## Upcoming Topics
 
-- Debug & Display
-- Lifetimes
 - Lifetime Elision
 - Closures
 - Iterators
