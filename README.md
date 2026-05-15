@@ -36,6 +36,7 @@ A comprehensive collection of Rust learning materials, following a structured cu
 30. **Lifetimes** - Ensuring references remain valid.
 31. **Arrays** - Fixed-size collections on the stack.
 32. **Array Indexing & Iteration** - Accessing and looping through array elements.
+33. **Advanced Enums** - Using enums with methods (`impl`) and state machine patterns.
 
 ## Upcoming Topics
 
