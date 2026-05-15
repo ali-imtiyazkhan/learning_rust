@@ -20,7 +20,7 @@ A comprehensive collection of Rust learning materials, following a structured cu
 14. **Flow Control** - `if/else` expressions and loops (`loop`, `while`, `for`).
 15. **Pattern Match** - Using the `match` operator and `if let` for concise control flow.
 16. **Methods & Associated Functions** - Defining functionality within `impl` blocks.
-17. **Generics** - Creating flexible, reusable code with type parameters.
+17. **Generics** - Creating flexible, reusable code with type parameters. Includes trait bounds, where clauses, and const generics.
 18. **Traits** - Defining shared behavior across different types (similar to interfaces).
 19. **Trait Objects** - Dynamic dispatch for using different types that implement the same trait.
 20. **Associated Types** - Placeholder types within traits for more flexible designs.
