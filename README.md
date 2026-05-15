@@ -37,9 +37,9 @@ A comprehensive collection of Rust learning materials, following a structured cu
 31. **Arrays** - Fixed-size collections on the stack.
 32. **Array Indexing & Iteration** - Accessing and looping through array elements.
 33. **Advanced Enums** - Using enums with methods (`impl`) and state machine patterns.
+34. **Lifetime Elision** - The rules that allow Rust to infer lifetimes automatically.
 
 ## Upcoming Topics
 
-- Lifetime Elision
 - Closures
 - Iterators
