@@ -25,7 +25,7 @@ A comprehensive collection of Rust learning materials, following a structured cu
 19. **Trait Objects** - Dynamic dispatch for using different types that implement the same trait.
 20. **Associated Types** - Placeholder types within traits for more flexible designs.
 21. **String Collection** - Working with the heap-allocated `String` collection.
-22. **Vectors** - Growable arrays stored on the heap.
+22. **Vectors** - Growable arrays stored on the heap. Includes examples on sorting, capacity, and functional methods.
 23. **HashMaps** - Storing key-value pairs for fast lookup.
 24. **Type Coercion** - Automatic type conversions (like Deref coercion).
 25. **From & Into** - Idiomatic type conversion traits.
