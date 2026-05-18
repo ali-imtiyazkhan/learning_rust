@@ -1,7 +1,5 @@
 use std::fmt::{Display, Debug};
 
-// 1. Generic Function with Trait Bounds
-// T must implement PartialOrd so we can compare values
 fn largest<T: PartialOrd>(list: &[T]) -> &T {
     let mut largest = &list[0];
     for item in list {
@@ -12,7 +10,6 @@ fn largest<T: PartialOrd>(list: &[T]) -> &T {
     largest
 }
 
-// 2. Multiple Trait Bounds
 fn compare_and_print<T: Display + PartialOrd>(a: T, b: T) {
     if a > b {
         println!("{} is greater than {}", a, b);
@@ -21,7 +18,6 @@ fn compare_and_print<T: Display + PartialOrd>(a: T, b: T) {
     }
 }
 
-// 3. Using 'where' clauses for readability
 fn some_function<T, U>(t: T, u: U) -> i32
 where
     T: Display + Clone,
@@ -32,7 +28,6 @@ where
     0
 }
 
-// 4. Methods with different type parameters than the struct
 struct Pair<T> {
     x: T,
     y: T,
@@ -43,7 +38,7 @@ impl<T> Pair<T> {
         Self { x, y }
     }
 
-    // Mixup takes another Pair with potentially different types
+
     fn mixup<V>(self, other: Pair<V>) -> Pair<(T, V)> {
         Pair {
             x: (self.x, other.x),
@@ -52,7 +47,6 @@ impl<T> Pair<T> {
     }
 }
 
-// 5. Const Generics (Using a value as a type parameter)
 struct ArrayWrapper<T, const N: usize> {
     data: [T; N],
 }
@@ -74,9 +68,8 @@ fn main() {
     let p3 = p1.mixup(p2);
     println!("Mixed pair x: {:?}", p3.x);
 
-    // Const generic usage
     let _wrapper = ArrayWrapper {
-        data: [1, 2, 3], // Must have exactly 3 elements if N is 3
+        data: [1, 2, 3], 
     };
     let _wrapper: ArrayWrapper<i32, 3> = ArrayWrapper { data: [1, 2, 3] };
 }
